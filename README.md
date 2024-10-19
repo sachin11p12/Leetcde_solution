@@ -8,24 +8,4 @@ Given an array of strings, find the longest common prefix string amongst them. I
 **Output**: `"fl"`
 
 # Leetcde_solution
-## Solution
-Here's a Java solution using sorting and character comparison:
-
-```java
-class Solution {
-    public String longestCommonPrefix(String[] arr) {
-        int n = arr.length;
-        Arrays.sort(arr);
-        int i = 0;
-        String start = arr[0];
-        String end = arr[n - 1];
-        while (i < start.length()) {
-            if (start.charAt(i) == end.charAt(i)) {
-                i++;
-            } else {
-                break;
-            }
-        }
-        return start.substring(0, i);
-    }
-}
+## open the leetcode_ SOlution file
